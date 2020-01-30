@@ -43,7 +43,7 @@ func (s *metadataSupplier) Get(key string) string {
 }
 
 func (s *metadataSupplier) Set(key string, value string) {
-	s.metadata.Append(key, value)
+	s.metadata.Set(key, value)
 }
 
 // Inject injects correlation context and span context into the gRPC
